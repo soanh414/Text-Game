@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            text-align: center; width: 100px; height: 100px;
+            background-color: aquamarine; position: relative;
+        }
+        #khong{
+            animation-name: game;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes game{
+            0% {background-color: cadetblue; left: 0px; top: 0px;}
+            25% {background-color: rgb(160, 95, 141); left: 300px; top: 0px;}
+            50% {background-color: rgb(112, 218, 19); left: 300px; top: 300px;}
+            75% {background-color: rgb(218, 152, 10); left: 0px; top: 300px;}
+            1000% {background-color: rgb(122, 95, 160); left: 0px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <h1> Chào buổi sáng tươi đẹp nha</h1>
+    <div>
+        <button>Có</button>
+        <button id="khong" onclick="khong()">Không</button>
+    </div>
+    <script>
+        function khong(){
+            alert(!"khó thế cơ á");
+        }
+    </script>
+</body>
+</html>
